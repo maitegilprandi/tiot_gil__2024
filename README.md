@@ -10,7 +10,8 @@ Se va a caracterizar el consumo básico de esta aplicación mediante el uso de l
 Los software a utilizar son:
 - Code Composer Studio v.12.1.0, de Texas Instruments: para programar y debug el microcontrolador MSP430.
 - Smart Commander v1.3.3.0, de Wurth Elektronik: para configurar el módulo BLE del USB Stick, y para la transmisión y recepeción de datos de la conexión establecida entre los módulos BLE.
-- Power Profiler, de Nordic Semiconductor: para la configuración y muestreo de la corriente eléctrica del sistema conectado a la PPKII. Este software corre dentro de nRF Connect for Desktop v5.0.1. - Logic 2 v2.4.14, de Saleae: para configurar y visualizar las entradas digital y analógicas del analizador lógico Logic Pro 8.
+- Power Profiler, de Nordic Semiconductor: para la configuración y muestreo de la corriente eléctrica del sistema conectado a la PPKII. Este software corre dentro de nRF Connect for Desktop v5.0.1.
+- Logic 2 v2.4.14, de Saleae: para configurar y visualizar las entradas digital y analógicas del analizador lógico Logic Pro 8.
 
 El Central va a transmitir los datos: 0xABCD. El Periférico va a recibir datos y si coincide con este valor predeterminado, va a responder con una secuencia de datos que va a corresponder a un contador de 0 a 1000, y de 1000 a 0. Esto genera un flujo considerable de datos desde el Periférico al Central, y es sencillo de verificar la correcta recepción de los datos desde la PC, desde el software Smart Commander (software que configura y comanda al USB stick).\\
 

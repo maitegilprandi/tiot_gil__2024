@@ -13,7 +13,7 @@ Los software a utilizar son:
 - Power Profiler, de Nordic Semiconductor: para la configuración y muestreo de la corriente eléctrica del sistema conectado a la PPKII. Este software corre dentro de nRF Connect for Desktop v5.0.1.
 - Logic 2 v2.4.14, de Saleae: para configurar y visualizar las entradas digital y analógicas del analizador lógico Logic Pro 8.
 
-El Central va a transmitir los datos: 0xABCD. El Periférico va a recibir datos y si coincide con este valor predeterminado, va a responder con una secuencia de datos que va a corresponder a un contador de 0 a 1000, y de 1000 a 0. Esto genera un flujo considerable de datos desde el Periférico al Central, y es sencillo de verificar la correcta recepción de los datos desde la PC, desde el software Smart Commander (software que configura y comanda al USB stick).\\
+El Central va a transmitir los datos: 0xABCD. El Periférico va a recibir datos y si coincide con este valor predeterminado, va a responder con una secuencia de datos que va a corresponder a un contador de 0 a 1000, y de 1000 a 0. Esto genera un flujo considerable de datos desde el Periférico al Central, y es sencillo de verificar la correcta recepción de los datos desde la PC, desde el software Smart Commander (software que configura y comanda al USB stick).
 
 El código espeja la máquina de estados de los estados definidos en la placa Proteus-III. Los estados que se utilizan para este proyecto son: SLEEP, IDLE y CONNECTED. Se utilizan 2 timers, independientes y configurables que permiten transicionar entre estados. El timer T_idle: tiempo de permanencia en el estado IDLE para irse a SLEEP. Y el timer T_connected, tiempo de permanencia en el estado CONNECTED, para luego irse a IDLE.
 
